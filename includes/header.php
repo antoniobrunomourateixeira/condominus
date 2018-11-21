@@ -143,8 +143,8 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="condominio.php"><i class="fa fa-circle-o"></i> Condomínio</a></li>
-            <li><a href="funcionario.php"><i class="fa fa-circle-o"></i> Funcionário</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Vagas Estacionamento</a></li>
+            <li><a href="pessoa.php"><i class="fa fa-circle-o"></i> Pessoa</a></li>
+            <li><a href="garagem.php"><i class="fa fa-circle-o"></i> Garagem</a></li>
           </ul>
         </li>
         <li class="treeview">
