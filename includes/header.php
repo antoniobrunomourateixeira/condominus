@@ -83,13 +83,13 @@
 
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="dist/img/login.png" class="user-image" alt="User Image">
               <span class="hidden-xs">Bruno Moura</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="dist/img/login.png" class="img-circle" alt="User Image">
 
                 <p>
                   Bruno Moura - Web Developer
@@ -122,7 +122,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="dist/img/login.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Bruno Moura</p>
@@ -133,7 +133,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU DE NAVEGAÇÃO</li>
-        <li><a href="index.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+        <li><a href="index.php"><i class="fa fa-dashboard"></i> <span> Dashboard </span></a></li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-plus"></i> <span>Cadastros</span>
@@ -142,9 +142,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="condominio.php"><i class="fa fa-circle-o"></i> Condomínio</a></li>
-            <li><a href="pessoa.php"><i class="fa fa-circle-o"></i> Pessoa</a></li>
-            <li><a href="garagem.php"><i class="fa fa-circle-o"></i> Garagem</a></li>
+            <li><a href="condominio.php"><i class="fa fa-circle-o"></i> Condomínio </a></li>
+            <li><a href="bloco.php"><i class="fa fa-circle-o"></i> Bloco </a></li>
+            <li><a href="unidade.php"><i class="fa fa-circle-o"></i> Unidade </a></li>
+            <li><a href="pessoa.php"><i class="fa fa-circle-o"></i> Pessoa </a></li>
+            <li><a href="garagem.php"><i class="fa fa-circle-o"></i> Garagem </a></li>
+            <li><a href="comunicado.php"><i class="fa fa-circle-o"></i> Comunicado </a></li>
+            <!-- <li><a href="forum.php"><i class="fa fa-circle-o"></i> Forum</a></li> -->
           </ul>
         </li>
         <li class="treeview">
@@ -156,6 +160,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="despesas.php"><i class="fa fa-circle-o"></i> Despesas </a></li>
+            <li><a href="mensalidade.php"><i class="fa fa-circle-o"></i> Mensalidade </a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -167,8 +172,12 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="usuario.php"><i class="fa fa-circle-o"></i> Usuários</a></li>
+            <li><a href="parametroEmail.php"><i class="fa fa-circle-o"></i> Parâmetros de Email</a></li>
           </ul>
         </li>
+        <li><a href="forum.php"><i class="fa fa-bullhorn"></i> Fórum </a>
+        <li><a href="servico.php"><i class="fa fa-wrench"></i> Serviço </a>
+        <li><a href="contrato.php"><i class="fa fa-clipboard"></i> Contrato </a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

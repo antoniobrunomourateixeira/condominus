@@ -4,6 +4,8 @@
 	<section class="content-header">
 		<h1> Despesas </h1>
 		<ol class="breadcrumb" style="padding-top: 0px">
+			<li><button class="btn btn-sm btn-success" data-toggle="modal" data-target="#relatorio"> <i class="fa fa-print"></i> Relatório </button></li>
+
 			<li><button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#cadastroDespesa"> <i class="fa fa-plus"></i> Cadastrar</button></li>
 		</ol>
 
@@ -22,7 +24,7 @@
 				<tbody> 
 
 					<tr>
-						<td colspan="4" style="padding-left: 10px; background: #ddd; font-size: 14px; font-weight: bold; color: #3c8dbc">NOVEMBRO / 2018</td>
+						<td colspan="4" style="padding-left: 10px; background: #ddd; font-size: 14px; font-weight: bold; color: #bc3c3c">NOVEMBRO / 2018</td>
 					</tr>
 
 					<tr> 
@@ -50,7 +52,7 @@
 					</tr>
 
 					<tr>
-						<td colspan="4" style="padding-left: 10px; background: #ddd; font-size: 14px; font-weight: bold; color: #3c8dbc">DEZEMBRO / 2018</td>
+						<td colspan="4" style="padding-left: 10px; background: #ddd; font-size: 14px; font-weight: bold; color: #bc3c3c">DEZEMBRO / 2018</td>
 					</tr>
 
 					<tr> 
@@ -72,6 +74,7 @@
 
 </div>
 
+<!-- modal de cadastro -->
 <div class="modal fade" id="cadastroDespesa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -120,5 +123,50 @@
     </div>
   </div>
 </div>
+<!-- fim do modal de cadastro -->
+
+<!-- relatorio -->
+<div class="modal fade" id="relatorio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">FILTRO</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        	<div class="col-md-4">
+	        	<div class="form-group">
+	        		<label>Tipo</label>
+	        		<select class="form-control">
+	        			<option>Insumo</option>
+	        			<option>Salario</option>
+	        			<option>Administrativo</option>
+	        			<option>Fundo de obras</option>
+	        		</select>
+	        	</div>
+	        </div>
+	        <div class="col-md-4">
+        		<div class="form-group">
+        			<label>De</label>
+        			<input class="form-control" type="date" name="">
+        		</div>	
+        	</div>
+        	<div class="col-md-4">
+        		<div class="form-group">
+        			<label>Até</label>
+        			<input class="form-control" type="date" name="">
+        		</div>	
+        	</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"> <i class="fa fa-ban"></i> Cancelar</button>
+        <button type="button" class="btn btn-primary"> <i class="fa fa-save"></i> Gerar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fim do relatorio -->
 
 <?php include('includes/footer.php') ?>
